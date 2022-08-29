@@ -22,7 +22,7 @@ body
     height: 350px;
     width: 350px;
     border-radius: 50%;
-    border: solid white 25px;
+    border: solid rgba(255, 255, 255, 0.788) 25px;
     outline: solid rgba(0, 0, 0, 0.107) 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.467);
     position: relative;
@@ -37,8 +37,11 @@ body
     left: 0px;
     bottom: 0px;
     border-radius: 50%;
-    border: solid rgba(255, 255, 255, 0.792) 5px;
+    border: solid rgba(80, 80, 80, 0.792) 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.467) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hand
@@ -46,16 +49,40 @@ body
     top: 50%;
     width: 40%;
     left: 10%;
-    right: 10%;
     position: absolute;
-    height: 4px;
+    height: 6px;
     background-color: black;
     transform-origin: 100%;
     transition: all 0.05s;
+    box-shadow: 0px 0px 10px black;
+    transform: rotate(90deg);
+    transition-timing-function: cubic-bezier(0, 1.8, 0.44, 0.94);
 }
 
 .hour-hand 
 {
-    transform: rotate(320deg);
-    transition-timing-function: cubic-bezier(0, 1.8, 0.44, 0.94);
+    background-color: rgb(255, 255, 255);
+}
+
+.circle 
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleII
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 20px white;
 }
